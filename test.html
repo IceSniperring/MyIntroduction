@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            max-width: 600px;
+            margin: 12px auto;
+        }
+
+        section:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        footer {
+            max-width: 600px;
+            text-align: center;
+            margin: 12px auto;
+            padding: 15px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 8px;
+            transition: .3s ease;
+        }
+
+        footer:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        #blog {
+            width: 100px;
+            height: auto;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .popup {
+            transform: scale(0);
+            position: absolute;
+            width:300px;
+            left:150px;
+            background-color: #ffffff;
+            color:#555;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            transition: .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>IceSnipers</h1>
+        <p>个人介绍</p>
+    </header>
+
+    <section>
+        <h2>关于我</h2>
+        <ol>
+            <li>本人对网络比较的感兴趣，也希望以后能够从事与网络相关的工作</li>
+            <li>本人现在而言对网络的开发还不算太了解，以后会多多学习网络的相关知识</li>
+            <li>本人在学校的表现还是可以的，目前为止没有挂过科，平均绩点也还可以，比较中规中居吧</li>
+            <li>本人虽然喜欢过着稳定安逸的生活，但并不是没有上进心</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>技能</h2>
+        <ol>
+            <li>可以组建小型的网络(H3CNE证书)</li>
+            <li>可以写一些比较简单的前端网页</li>
+            <li>可以使用wordpress搭建简单的网页</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>项目经验</h2>
+        <ul>
+            <li>暂无</li>
+            <li>暂无</li>
+            <li>暂无</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>联系我：3339354363@qq.com</p>
+        <div id='blog' onmouseover="showPopup()" onmouseout="hidePopup()">
+            <a href="https://www.blog.icesniper.love" style="text-decoration: none;color:#555">博客主页</a>
+            <div id="popup" class="popup">博客域名: www.blog.icesniper.love</div>
+        </div>
+    </footer>
+
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.transform = "scale(1)";
+        }
+
+        function hidePopup() {
+            document.getElementById("popup").style.transform = "scale(0)";
+        }
+    </script>
+
+</body>
+
+</html>
