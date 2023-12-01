@@ -35,7 +35,6 @@ left_arrow.addEventListener("click", pre);
 document.addEventListener("keydown", function (event) {
     if (event.key === 'a' || event.key === "ArrowLeft") {
         pre();
-        console.log("keyleft");
     }
 })
 
@@ -55,7 +54,6 @@ right_arrow.addEventListener("click", next);
 document.addEventListener("keydown", function (event) {
     if (event.key === 'd' || event.key === "ArrowRight") {
         next();
-        console.log("keyright");
     }
 })
 
