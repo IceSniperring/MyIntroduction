@@ -51,16 +51,16 @@ p {
     color: #555;
 }
 
-.intro{
-    position:relative;
-    max-width:800px;
-    height:255px;
-    margin:auto;
+.intro {
+    position: relative;
+    max-width: 800px;
+    height: 255px;
+    margin: auto;
 }
 
-#about,
-#skills,
-#experience {
+.about,
+.skills,
+.experience {
     position: absolute;
     background-color: #fff;
     padding: 15px;
@@ -69,22 +69,22 @@ p {
     transition: box-shadow 0.3s ease;
     width: 96%;
     transform: translateZ(0);
-    transition: .2s ease-in;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: .3s;
 }
 
-#about:hover,
-#skills:hover,
-#experience:hover {
+.about:hover,
+.skills:hover,
+.experience:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px) translateZ(0);
 }
 
-#skills{
-    transform: scale(0);
-}
-
-#experience{
-    transform: scale(0);
+.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: .3s;
 }
 
 h2 {
@@ -97,13 +97,13 @@ li {
 }
 
 footer {
-    border:1px solid;
+    border: 1px solid;
     max-width: 770px;
     text-align: center;
     margin: 12px auto;
     background-color: #3498db;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding:15px;
+    padding: 15px;
     color: #fff;
     border-radius: 8px;
     transition: .2s ease;
@@ -157,25 +157,27 @@ a:hover {
     z-index: -1;
 }
 
-.icon{
+.icon {
     text-align: center;
     margin: 12px auto;
 }
 
-.fa-caret-square-left{
-    margin-right:20px;
-    transition: .2s ease-in;
-}
-.fa-caret-square-right{
-    margin-left:20px;
-    transition: .2s ease-in;
+.fa-caret-square-left {
+    margin-right: 20px;
+    transition: .2s;
 }
 
-.fa-caret-square-left:hover{
-    transform: scale(1.05);
-    color:lightcoral
+.fa-caret-square-right {
+    margin-left: 20px;
+    transition: .2s;
 }
-.fa-caret-square-right:hover{
+
+.fa-caret-square-left:hover {
     transform: scale(1.05);
-    color:lightcoral
+    color: lightcoral
+}
+
+.fa-caret-square-right:hover {
+    transform: scale(1.05);
+    color: lightcoral
 }
