@@ -5,127 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人介绍</title>
-    <style>
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #3498db;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        p {
-            color: #555;
-        }
-
-        section {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-            max-width: 800px;
-            margin: 12px auto;
-            transform: translateZ(0);
-            transition: .2s ease-in;
-        }
-
-        section:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px) translateZ(0);
-        }
-
-        h2 {
-            color: #3498db;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: #555;
-        }
-
-        footer {
-            max-width: 800px;
-            text-align: center;
-            margin: 12px auto;
-            padding: 15px;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 8px;
-            transition: .2s ease;
-            transform: translateZ(0);
-        }
-
-        footer:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px) translateZ(0);
-        }
-
-        a {
-            color: #555;
-            text-decoration: none;
-            transition: color 0.2s ease-in;
-        }
-
-        a:hover {
-            color: #fff;
-            cursor: pointer;
-        }
-
-        #blog {
-            width: 100px;
-            height: auto;
-            margin: 0 auto;
-            cursor: pointer;
-        }
-
-        .popup {
-            transform: scale(0);
-            position: absolute;
-            width: 300px;
-            background-color: #ffffff;
-            color: #555;
-            padding: 10px;
-            border-radius: 4px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1;
-            transition: .2s ease-in;
-        }
-
-        #myImg {
-            width: 20%;
-            height: auto;
-            position: absolute;
-            opacity: .8;
-            right: 20px;
-            top: 10px;
-            position: fixed;
-            z-index: -1;
-        }
-    </style>
-</head>
-
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4ee0e38ee6.js" crossorigin="anonymous"></script>
 <body>
 
     <header>
@@ -133,32 +14,34 @@
         <p>🌈个人介绍</p>
     </header>
 
-    <section>
-        <h2>🧭关于我</h2>
-        <ol>
-            <li>本人对网络比较的感兴趣，也希望以后能够从事与网络相关的工作</li>
-            <li>本人现在而言对网络的开发还不算太了解，以后会多多学习网络的相关知识</li>
-            <li>本人在学校的表现还是可以的，目前为止没有挂过科，平均绩点也还可以，比较中规中居吧</li>
-            <li>本人虽然喜欢过着稳定安逸的生活，但并不是没有上进心</li>
-        </ol>
-    </section>
+    <section class="intro">
+        <section id="about">
+            <h2>🧭关于我</h2>
+            <ol>
+                <li>本人对网络比较的感兴趣，也希望以后能够从事与网络相关的工作</li>
+                <li>本人现在而言对网络的开发还不算太了解，以后会多多学习网络的相关知识</li>
+                <li>本人在学校的表现还是可以的，目前为止没有挂过科，平均绩点也还可以，比较中规中居吧</li>
+                <li>本人虽然喜欢过着稳定安逸的生活，但并不是没有上进心</li>
+            </ol>
+        </section>
 
-    <section>
-        <h2>📖技能</h2>
-        <ol>
-            <li>可以组建小型的网络(H3CNE证书)</li>
-            <li>可以写一些比较简单的前端网页</li>
-            <li>可以使用wordpress搭建简单的网页</li>
-        </ol>
-    </section>
+        <section id="skills">
+            <h2>📖技能</h2>
+            <ol>
+                <li>可以组建小型的网络(H3CNE证书)</li>
+                <li>可以写一些比较简单的前端网页</li>
+                <li>可以使用wordpress搭建简单的网页</li>
+            </ol>
+        </section>
 
-    <section>
-        <h2>🏢项目经验</h2>
-        <ol>
-            <li>暂无</li>
-            <li>暂无</li>
-            <li>暂无</li>
-        </ol>
+        <section id="experience">
+            <h2>🏢项目经验</h2>
+            <ol>
+                <li>暂无</li>
+                <li>暂无</li>
+                <li>暂无</li>
+            </ol>
+        </section>
     </section>
     <footer>
         <span style="color:#555">☎️联系我：3339354363@qq.com</span><br>
@@ -167,18 +50,12 @@
             <div id="popup" class="popup">🌐博客域名: www.blog.icesniper.love</div>
         </div>
     </footer>
-
-    <script>
-        function showPopup() {
-            document.getElementById("popup").style.transform = "scale(1)";
-        }
-
-        function hidePopup() {
-            document.getElementById("popup").style.transform = "scale(0)";
-        }
-    </script>
-
     <img src="摇曳露营（小）.webp" id="myImg">
+    <section class="icon">
+        <a class="fa fa-caret-square-left fa-3x"></a>
+        <a class="fa fa-caret-square-right fa-3x"></a>
+    </section>
 </body>
+<script src="index.js"></script>
 
 </html>
