@@ -14,19 +14,36 @@ function hidePopup() {
     document.getElementById("popup").style.transform = "scale(0)";
 }
 
-left_arrow.addEventListener("click", function () {
+/*向前翻页*/
+function pre() {
     if (skills.classList.contains("active")) {
         toggleActiveClass(skills, about);
     } else if (experience.classList.contains("active")) {
         toggleActiveClass(experience, skills);
     }
-});
+}
+/*向后翻页*/
+function next() {
+    if (about.classList.contains("active")) {
+        toggleActiveClass(about, skills);
+    } else if (skills.classList.contains("active")) {
+        toggleActiveClass(skills, experience);
+    }
+}
+
+left_arrow.addEventListener("click", pre);
+document.addEventListener("keydown", function (event) {
+    if (event.key === 'a' || event.key === "ArrowLeft") {
+        pre();
+        console.log("keyleft");
+    }
+})
 
 left_arrow.addEventListener("mousemove", function () {
     if (about.classList.contains("active")) {
         left_arrow.style.color = "gray";
     } else {
-        left_arrow.style.color = "lightcoral";
+        left_arrow.style.color = "darkorange";
     }
 })
 
@@ -34,19 +51,19 @@ left_arrow.addEventListener("mouseout", function () {
     left_arrow.style.color = "unset";
 })
 
-right_arrow.addEventListener("click", function () {
-    if (about.classList.contains("active")) {
-        toggleActiveClass(about, skills);
-    } else if (skills.classList.contains("active")) {
-        toggleActiveClass(skills, experience);
+right_arrow.addEventListener("click", next);
+document.addEventListener("keydown", function (event) {
+    if (event.key === 'd' || event.key === "ArrowRight") {
+        next();
+        console.log("keyright");
     }
-});
+})
 
 right_arrow.addEventListener("mousemove", function () {
     if (experience.classList.contains("active")) {
         right_arrow.style.color = "gray";
     } else {
-        right_arrow.style.color = "lightcoral";
+        right_arrow.style.color = "darkorange";
     }
 })
 

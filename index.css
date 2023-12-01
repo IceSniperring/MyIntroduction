@@ -173,11 +173,9 @@ a:hover {
 }
 
 .fa-caret-square-left:hover {
-    transform: scale(1.05);
-    color: lightcoral
+    transform: translateY(-2px) translateZ(0) scale(1.05);
 }
 
 .fa-caret-square-right:hover {
-    transform: scale(1.05);
-    color: lightcoral
+    transform: translateY(-2px) translateZ(0) scale(1.05);
 }
