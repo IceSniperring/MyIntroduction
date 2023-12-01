@@ -173,9 +173,9 @@ a:hover {
 
 .fa-caret-square-left:hover{
     transform: scale(1.05);
-    color:lightblue
+    color:lightcoral
 }
 .fa-caret-square-right:hover{
     transform: scale(1.05);
-    color:lightblue
+    color:lightcoral
 }
