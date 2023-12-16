@@ -24,7 +24,7 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('my_fav_video', {
         height: '400',
         width: '94%',
-        videoId: 'Q4WboePedWU'
+        videoId: 'yZwlW5INhgk'
     });
 }
 
