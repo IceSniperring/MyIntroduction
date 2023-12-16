@@ -54,13 +54,14 @@ p {
 .intro {
     position: relative;
     max-width: 800px;
-    height: 400px;
+    height: 500px;
     margin: auto;
 }
 
 .about,
 .skills,
-.experience {
+.experience,
+.my_fav_video {
     position: absolute;
     background-color: #fff;
     padding: 15px;
@@ -74,9 +75,15 @@ p {
     transition: .3s;
 }
 
+#my_fav_video {
+    margin-left:3%;
+    border-radius: 8px;
+}
+
 .about:hover,
 .skills:hover,
-.experience:hover {
+.experience:hover,
+.my_video:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px) translateZ(0);
 }

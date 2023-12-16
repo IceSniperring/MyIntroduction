@@ -1,6 +1,7 @@
 var about = document.querySelector('.about');
 var skills = document.querySelector('.skills');
 var experience = document.querySelector('.experience');
+var my_fav_video = document.querySelector('.my_fav_video');
 var left_arrow = document.querySelector(".fa-caret-square-left");
 var right_arrow = document.querySelector(".fa-caret-square-right");
 
@@ -20,6 +21,8 @@ function pre() {
         toggleActiveClass(skills, about);
     } else if (experience.classList.contains("active")) {
         toggleActiveClass(experience, skills);
+    } else if (my_fav_video.classList.contains("active")) {
+        toggleActiveClass(my_fav_video, experience);
     }
 }
 /*向后翻页*/
@@ -28,6 +31,8 @@ function next() {
         toggleActiveClass(about, skills);
     } else if (skills.classList.contains("active")) {
         toggleActiveClass(skills, experience);
+    } else if (experience.classList.contains("active")) {
+        toggleActiveClass(experience, my_fav_video);
     }
 }
 
@@ -58,7 +63,7 @@ document.addEventListener("keydown", function (event) {
 })
 
 right_arrow.addEventListener("mousemove", function () {
-    if (experience.classList.contains("active")) {
+    if (my_fav_video.classList.contains("active")) {
         right_arrow.style.color = "gray";
     } else {
         right_arrow.style.color = "darkorange";
