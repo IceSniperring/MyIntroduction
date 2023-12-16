@@ -61,7 +61,8 @@ p {
 .about,
 .skills,
 .experience,
-.my_fav_video {
+.my_fav_video,
+.my_fav_music {
     position: absolute;
     background-color: #fff;
     padding: 15px;
@@ -76,14 +77,19 @@ p {
 }
 
 #my_fav_video {
-    margin-left:3%;
-    border-radius: 8px;
+    margin-left: 3%;
+    border-radius: 18px;
+}
+
+#my_fav_music {
+    text-align: center;
 }
 
 .about:hover,
 .skills:hover,
 .experience:hover,
-.my_video:hover {
+.my_fav_video:hover,
+.my_fav_music:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px) translateZ(0);
 }
