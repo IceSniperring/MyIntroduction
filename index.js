@@ -49,7 +49,7 @@ function stopVideo() {
 }
 //控制spotify的超时
 var iframeContainer = document.getElementById('my_fav_music');
-var myIframe = document.getElementById('iframe_spotify');
+var myIframe = document.getElementById('spotify_music');
 
 // 设置超时时间（以毫秒为单位）
 var timeoutMilliseconds = 5000; // 5秒
