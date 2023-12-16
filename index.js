@@ -68,7 +68,11 @@ myIframe.addEventListener('load', function () {
 // 处理加载超时的函数
 function handleTimeout() {
     // 在原来的 div 中写入"加载异常"的内容
+<<<<<<< HEAD
     iframeContainer.innerHTML = '抱歉，Spotif音乐加载失败，可能是网络原因哦';
+=======
+    iframeContainer.innerHTML = '抱歉，Spotify音乐加载失败，可能是网络原因哦';
+>>>>>>> e095c2a9cc57588d4065909fe661fb7e660b4077
 }
 
 // 设置超时定时器
